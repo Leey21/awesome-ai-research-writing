@@ -45,7 +45,8 @@
 - [模型选择](#模型选择)
 
 ### Part II: 论文写作相关的 Skills
-- [Skills 的配置](#skills-的配置)
+- [内置 Skills（Claude.ai 直接使用）](#内置-skillsclaude-直接使用)
+- [Skills 的配置（OpenSkills 生态）](#skills-的配置openskills-生态)
 - [Skills 总览](#skills-总览)
 - [使用场景与示例 Prompt](#使用场景与示例-prompt)
 
@@ -769,11 +770,39 @@ Highlight the core novelty. Ensure the connection logic makes sense."""
 
 # Part II: 论文写作相关的 Agent-Skills
 
-> 🎯 **适用对象**：本部分内容主要面向经常使用 Cursor、Claude Code 等 AI coding 工具的用户
+> 🎯 **适用对象**：本部分内容主要面向经常使用 Claude.ai、Cursor、Claude Code 等 AI 工具的用户
 >
-> 💡 **使用说明**：Agent Skills 是一种可被 AI 助手（如 Claude、Cursor）加载的扩展能力包，内含针对特定任务的流程、规范与模板。在 Claude Code、Cursor 等环境中配置相应 Skill 后，在对话中直接描述需求（如目标会议、repo 路径、要写的章节），即可触发对应流程，无需记忆复杂 prompt
+> 💡 **使用说明**：Agent Skills 是一种可被 AI 助手（如 Claude、Cursor）加载的扩展能力包，内含针对特定任务的流程、规范与模板。配置后，在对话中直接描述需求或输入 `/技能名` 即可触发，无需记忆复杂 prompt
 
-## Skills 的配置
+## 内置 Skills（Claude 直接使用）
+
+本仓库在 `.claude/skills/` 目录中预置了 **15 个学术写作核心技能**，对应 Part I 中全部 prompt 场景。
+
+**如果你使用 Claude.ai**：克隆或 fork 本仓库后，在 **Customize → Skills** 面板中即可看到以下技能，直接点击或输入 `/技能名` 调用。
+
+**如果你使用 Cursor / Claude Code**：这些技能会被自动发现并加载，在 Agent 对话中直接触发。
+
+| 技能名 | 对应场景 |
+|--------|----------|
+| `/中转英` | 中文草稿 → 英文 LaTeX 学术片段 |
+| `/英转中` | 英文 LaTeX → 中文直译 |
+| `/中转中` | 中文草稿重构为学术段落（Word 场景） |
+| `/缩写` | 英文 LaTeX 微幅压缩（减少 5-15 词） |
+| `/扩写` | 英文 LaTeX 微幅扩充（增加 5-15 词） |
+| `/英文润色` | 英文 LaTeX 深度润色，达到顶会水准 |
+| `/中文润色` | 中文论文克制润色，只改必要问题（Word 场景） |
+| `/逻辑检查` | 终稿前"红线审查"，仅报致命错误 |
+| `/去AI味` | 机械化英文文本自然化 |
+| `/论文架构图` | 根据方法描述生成学术架构图 |
+| `/实验绘图推荐` | 根据数据推荐最适合的学术图表类型 |
+| `/生成图标题` | 中文描述 → 规范英文 Figure Caption |
+| `/生成表标题` | 中文描述 → 规范英文 Table Caption |
+| `/实验分析` | 实验数据 → LaTeX 分析段落 |
+| `/审稿人视角` | 模拟顶会 Reviewer 对全文进行严格评审（需上传 PDF） |
+
+---
+
+## Skills 的配置（OpenSkills 生态）
 
 下文的演示基于 **OpenSkills** 生态：它提供一套**通用的 Skills 加载/管理方式**，让 Cursor 等 AI coding agent 可以读取并使用以 `SKILL.md` 为核心的技能包。参考链接： [Cursor Agent Skills](https://cursor.com/docs/context/skills)、[openskills](https://github.com/numman-ali/openskills)
 
