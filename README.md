@@ -1,5 +1,14 @@
 > Make AI Writing Better for Everyone
 
+<p align="center">
+  <a href="https://www.atlascloud.ai/?utm_source=github&utm_medium=link&utm_campaign=awesome-ai-research-writing">
+    <img src="./assets/atlas-cloud-logo.png" alt="Atlas Cloud logo" width="220">
+  </a>
+</p>
+
+> 🎁 **[Atlas Cloud](https://www.atlascloud.ai/?utm_source=github&utm_medium=link&utm_campaign=awesome-ai-research-writing)** 可以把这里的论文写作 prompt、润色模板和写作 skills 直接变成真实可跑的写作实验：你可以用一个 OpenAI-compatible API 切换 DeepSeek、Qwen、GLM、Kimi、MiniMax 等模型，快速比较翻译、润色、审稿和分析效果。
+> 对学术写作和科研辅助也很友好：[coding plan](https://www.atlascloud.ai/console/coding-plan)
+
 ## 📖 为什么做这个项目
 
 当你第三次调试同一个润色 prompt 时，隔壁组的同学可能已经用现成的模板改完了三篇论文。
@@ -20,6 +29,14 @@
 - 🤝 **持续更新**：不断收集新技巧和最佳实践
 
 **不要在 prompt 调试上浪费时间，把精力留给真正的科研。**
+
+---
+
+## 用 Atlas Cloud 跑这些写作 Prompt
+
+- 用同一套学术写作 prompt 横向比较不同模型的翻译、润色和 reviewer 风格
+- 把写作 prompt 和 agent skills 接到自己的脚本、工作流或论文辅助工具里
+- 适合论文润色、审稿模拟、结构分析、图表标题生成和 arXiv 阅读场景
 
 ---
 
