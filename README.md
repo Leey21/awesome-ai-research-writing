@@ -51,7 +51,7 @@
 - [使用场景与示例 Prompt](#使用场景与示例-prompt)
 
 ### Part III: 如何让 AI 自己做研究
-- [Research-with-Python-Skill]([https://目标网址](https://github.com/mingger77/Research-with-Python-Skill))
+- [Research-with-Python-Skill](https://github.com/mingger77/Research-with-Python-Skill)
 
 # Part I: 写作 Prompt 集合
 
