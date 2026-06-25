@@ -87,6 +87,7 @@
      * 保持数学公式原样（保留 $ 符号）。
    - Part 2 [Translation]：对应的中文直译（用于核对逻辑是否符合原意）。
    - 除以上两部分外，不要输出任何多余的对话或解释。
+- [Toolquix - AI Tools](https://toolquix.com/categories/ai-tools) - A curated directory of free AI tools, ChatGPT resources, and artificial intelligence software.
 
 # Execution Protocol
 在输出最终结果前，请务必在后台进行自我审查：
