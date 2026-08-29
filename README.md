@@ -50,6 +50,9 @@
 - [Skills 总览](#skills-总览)
 - [使用场景与示例 Prompt](#使用场景与示例-prompt)
 
+### Part III: Claude Code Skills 套件
+- [Paper Polish Workflow](#paper-polish-workflow)
+
 ---
 
 # Part I: 写作 Prompt 集合
@@ -903,5 +906,21 @@ Skills 安装到 `.claude/skills/` 后，Cursor 启动时会自动发现并提�
 | 去 AI 味 / 润色后终稿检查 | humanizer | 待检查的段落或全文（LaTeX 片段、Word 正文、Markdown 等） | 「这段读起来像 AI 写的，帮我 humanize」「投稿前帮我把 Abstract 和 Introduction 去一下 AI 味」 | 重写后的自然文本 + 可选修改说明；保留原意与语气，减少显著性堆砌、破折号滥用、三点式、AI 高频词等 |
 | 用 Word 模板写投稿稿 | docx | 期刊/会议提供的 .docx 投稿模板；你的标题、作者、摘要、各节正文 | 「这是某期刊的 Word 模板，帮我把我的标题、摘要和正文填进去」「在模板里替换作者信息和 Section 1–4 的内容」 | 符合模板格式的 .docx 稿（可先解包再脚本替换占位内容，或按 OOXML 编辑后重新打包） |
 | 对 Word 稿做修订建议 | docx | 已写好的 .docx 论文或审稿意见 | 「按 redlining 流程，帮我在文档里标出需要改的几处」「把这段改成 tracked changes：原文删除、新文插入」 | 带修订痕迹的 .docx（仅标记改动处，便于作者接受/拒绝） |
+
+---
+
+# Part III: Claude Code Skills 套件
+
+> 🎯 **适用对象**：Claude Code 用户（LaTeX / Word 均适用）
+
+## Paper Polish Workflow
+
+本仓库的写作 Prompt（翻译、润色、去 AI 味、模拟审稿等）已被封装为 **[Paper Polish Workflow](https://github.com/Lylll9436/Paper-Polish-Workflow-skill)**，一套开箱即用的 Claude Code Skills 套件，LaTeX 和 Word 用户均可使用。
+
+无需复制 prompt，在 Claude Code 中一键安装后，直接用自然语言触发（「帮我润色」「模拟审稿」「去 AI 味」）即可：
+
+```
+请将 https://github.com/Lylll9436/Paper-Polish-Workflow-skill 中的 skills 安装到我的 .claude/skills/ 目录。
+```
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Leey21/awesome-ai-research-writing&type=Date)](https://star-history.com/#Leey21/awesome-ai-research-writing&Date)
