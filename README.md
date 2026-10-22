@@ -49,6 +49,7 @@
 - [Skills 的配置](#skills-的配置)
 - [Skills 总览](#skills-总览)
 - [使用场景与示例 Prompt](#使用场景与示例-prompt)
+- [PDFnoted](https://pdfnoted.com) — Browser-first PDF workspace with AI watermark removal, annotation review, and three-jurisdiction compliance checking (CN/US/EU)
 
 ---
 
